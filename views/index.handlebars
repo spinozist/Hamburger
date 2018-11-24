@@ -1,0 +1,20 @@
+<h1>Make Burgers</h1>
+<input id="burger_name" type="text" placeholder="Enter burger name">
+<button id="sutbmit-button">Submit</button>
+<h2>Ready to eat</h2>
+<ul id="burger-list">
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>{{ burger_name }}</li>
+    {{/unless}}
+    {{/each}}
+</ul>
+<h2>Eaten :)</h2>
+<ul id="devoured-list">
+    {{#each burgers}}
+    {{#if devoured}}
+    <li class="devoured">{{ burger_name }}</li>
+    {{/if}}
+    {{/each}}
+</ul>
+</div>

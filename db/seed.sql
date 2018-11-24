@@ -1,5 +1,5 @@
-insert into burgers (burger_name)
+insert into burgers (burger_name, devoured)
 	values 
-	("gluten-free lentil black bean burger"),
-	("the heart attack"),
-	("where the buffola roam");
+	("gluten-free lentil black bean burger", false),
+	("the heart attack", true),
+	("where the buffola roam", false);
