@@ -14,8 +14,14 @@ var burger = {
     });
   },
 
-  update: (burgerName, id, cb) => {
-    orm.updateOne("burgers", burgerName, id, (res) => {
+  update: (col, value, id, cb) => {
+    orm.updateOne("burgers", col, value, id, (res) => {
+      cb(res);
+    });
+  },
+
+  delete: (id, cb) => {
+    orm.deleteOne("burgers", id, (res) => {
       cb(res);
     });
   }

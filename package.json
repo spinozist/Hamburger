@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "wathc": "nodemon server.js"
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/spinozist/Hamburger/issues"
   },
-  "homepage": "https://github.com/spinozist/Hamburger#readme",
+  "homepage": "https://github.com/spinozist/Hamburger",
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",

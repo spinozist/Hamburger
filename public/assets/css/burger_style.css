@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    background-image: url('https://singularityhub.com/wp-content/uploads/2018/08/homemade-grilled-hamburger-on-plate-red_shutterstock_135216374.jpg');
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: orange;
+    border-radius: 5%;
+    opacity: .95
+}
+
+.card {
+    background-color: bisque;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.btn-info, 
+.btn-danger {
+    width: 80%;
+}

@@ -22,10 +22,22 @@ var orm = {
         });
     },
 
-    updateOne: (tableInput, burgerName, id, cb) => {
-        var queryString = "UPDATE ?? SET burger_name = ? WHERE id = ?;";
+    updateOne: (tableInput, col, value, id, cb) => {
+        var queryString = "UPDATE ?? SET ?? = ? WHERE id = ?;";
         connection.query(
-            queryString, [tableInput, burgerName, id], (err, result) => {
+            queryString, [tableInput, col, value, id], (err, result) => {
+                if (err) {
+                    throw err;
+                }
+                cb(result);
+            }
+        );
+    },
+
+    deleteOne: (tableInput, id, cb) => {
+        var queryString = "DELETE FROM ?? WHERE id=?;";
+        connection.query(
+            queryString, [tableInput, id], (err,result) => {
                 if (err) {
                     throw err;
                 }
